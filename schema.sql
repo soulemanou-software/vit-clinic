@@ -1,12 +1,14 @@
 /* Database schema to keep the structure of entire database. */
 
 CREATE TABLE animals (
-    id SERIAL PRIMARY KEY,
+    id BIGSERIAL,
     name varchar(100),
-    species varchar(100),
     date_of_birth date,
-    weight_in_kg numeric(10,2),
-    neutred boolean,
-    escape_attempts integer
-
+    escape_attempts integer,
+    neutered boolean,
+    weight_kg decimal,
+    species varchar(100),
 );
+
+
+ALTER TABLE animals ADD species varchar(100);
