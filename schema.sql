@@ -2,14 +2,13 @@
 
 CREATE TABLE animals (
     id BIGSERIAL,
-    name varchar(100),
-    date_of_birth date,
-    escape_attempts integer,
-    neutered boolean,
-    weight_kg decimal,
-    species varchar(100),
+    name VARCHAR(255),
+    date_of_birth DATE,
+    escape_attempts INT,
+    neutered BOOLEAN,
+    weight_kg DECIMAL,
+    species varchar(100)
 );
-
 
 CREATE TABLE owners (
     id BIGSERIAL PRIMARY KEY,
